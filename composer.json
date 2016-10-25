@@ -1,0 +1,33 @@
+{
+    "name": "resnext/pandats-api-client",
+    "description": "PandaTS Web API client",
+    "type": "library",
+    "keywords": ["Binary Options", "PandaTS", "Panda"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "La Sayter",
+            "email": "lasayter@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "~6.0",
+        "psr/log": "^1.0",
+        "monolog/monolog": "^1.21"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.1",
+        "fzaninotto/faker": "~1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Panda\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Panda\\Tests\\": "tests"
+        }
+    }
+}

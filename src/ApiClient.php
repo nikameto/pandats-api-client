@@ -66,7 +66,7 @@ class ApiClient implements LoggerAwareInterface
             'lastName'    => $request->getLastName(),
         ];
 
-        $payload = new Payload($this->request('/api/v1/Registration', $data));
+        $payload = new Payload($this->request('/api/v3/Registration', $data));
 
         return new RegistrationResponse($payload);
     }
